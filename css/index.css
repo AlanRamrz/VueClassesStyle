@@ -1,0 +1,11 @@
+.done {
+  text-decoration: line-through red;
+}
+
+.red {
+  color: red;
+}
+
+.bold{
+  font-weight: bold;
+}

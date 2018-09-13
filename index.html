@@ -8,7 +8,24 @@
   <body>
 
     <div id="ex1">
-      <p>{{ message }}</p>
+      <h3>Assign a basic class</h3>
+      <p v-bind:class="{done : isDone}">This is a task</p>
+    </div>
+
+    <div id="ex2">
+      <h3>Assign multiple classes</h3>
+      <p v-bind:class="{done : isDone, red : withColorRed}">This is a task</p>
+    </div>
+
+    <div id="ex3">
+      <h3>Assign multiple classes with a single object</h3>
+      <p v-bind:class="myObject">This is a task</p>
+    </div>
+
+    <div id="ex4">
+      <h3>Assign a class using expressions</h3>
+      <input type="number" v-model="number">
+      <p v-bind:class="{bold : number > 50}">Will get bold if the number is bigger than 50</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
